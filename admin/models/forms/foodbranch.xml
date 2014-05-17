@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset name="foodbranches">
+		<field name="id"
+			type="text"
+			label="JGLOBAL_FIELD_ID_LABEL"
+			description="JGLOBAL_FIELD_ID_DESC"
+			size="10"
+			default="0"
+			readonly="true"
+			class="readonly"
+		/>
+
+		<field name="companyname"
+			type="text"
+			label="COM_FOODBRANCHES_COMPANYNAME"
+			description="COM_FOODBRANCHES_COMPANYNAME_DESC"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		<field name="firstname"
+			type="text"
+			label="COM_FOODBRANCHES_FIRSTNAME"
+			description="COM_FOODBRANCHES_FIRSTNAME"
+			class="inputbox"
+			size="30"
+		 />
+		<field name="secondname"
+			type="text"
+			label="COM_FOODBRANCHES_SECONDNAME"
+			description="COM_FOODBRANCHES_SECONDNAME"
+			class="inputbox"
+			size="30"
+		 />
+		<field name="telephone"
+			type="tel"
+			label="COM_FOODBRANCHES_TELEPHONE"
+			description="COM_FOODBRANCHES_TELEPHONE"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		<field name="mobile"
+			type="text"
+			label="COM_FOODBRANCHES_MOBILE"
+			description="COM_FOODBRANCHES_MOBILE"
+			class="inputbox"
+			size="30"
+		 />
+		<field name="email"
+			type="text"
+			label="COM_FOODBRANCHES_EMAIL"
+			description="COM_FOODBRANCHES_EMAIL"
+			class="inputbox"
+			size="30"
+		 />
+		<field name="address_city"
+			type="text"
+			label="COM_FOODBRANCHES_CITY"
+			description="COM_FOODBRANCHES_CITY"
+			class="inputbox"
+			size="30"
+		 />
+		<field name="address_street"
+			type="text"
+			label="COM_FOODBRANCHES_STREET"
+			description="COM_FOODBRANCHES_STREET"
+			class="inputbox"
+			size="30"
+		 />
+		<field name="address_postcode"
+			type="text"
+			label="COM_FOODBRANCHES_POSTCODE"
+			description="COM_FOODBRANCHES_POSTCODE"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		<field name="comment"
+			type="textarea"
+			label="COM_FOODBRANCHES_COMMENT"
+			description="COM_FOODBRANCHES_COMMENT"
+			class="inputbox"
+			size="20"
+			rows="3"
+		 />
+		<field name="latitude"
+			type="text"
+			label="COM_FOODBRANCHES_LATITUDE"
+			description="COM_FOODBRANCHES_LATITUDE"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+		<field name="longitude"
+			type="text"
+			label="COM_FOODBRANCHES_LONGITUDE"
+			description="COM_FOODBRANCHES_LONGITUDE"
+			class="inputbox"
+			size="30"
+			required="true"
+		 />
+	</fieldset>
+</form>
+
