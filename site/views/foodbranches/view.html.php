@@ -1,45 +1,38 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+/**
+ * @version		$Id: view.html.php 2014-05-1 13:27:33Z Imre $
+ * @package		FoodBranch
+ * @subpackage	Components
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @author		Imre von Geczy
+ * @link
+ * @license		License GNU General Public License version 2 or later
  */
-defined('_JEXEC') or die;
+// No direct access to this file
+defined('_JEXEC') or die('Restricted access');
+
+// import Joomla view library
+jimport('joomla.application.component.view');
 
 /**
- * Search HTML view class for the Finder package.
- *
- * @package     Joomla.Site
- * @subpackage  com_finder
- * @since       2.5
+ * HTML View class for the FoodBranches Component
  */
-class BookingViewBooking extends JViewLegacy
+class FoodBranchesViewFoodBranches extends JView
 {
-    
-    protected $item;
-    protected $pagination;
-    protected $state;
-
-    /**
-	 * Method to display the view.
-	 *
-	 * @param   string  $tpl  A template file to load. [optional]
-	 *
-	 * @return  mixed  JError object on failure, void on success.
-	 *
-	 * @since   2.5
-	 */
-	public function display($tpl = null)
+	// Overwriting JView display method
+	function display($tpl = null) 
 	{
-		$app = JFactory::getApplication();
-		$this->params = $app->getParams();
+		// Assign data to the view
+		$this->companyname = $this->get('Company');
 
-                $this->helpparams = JComponentHelper::getParams('com_booking');
-                
-		$dispatcher = JEventDispatcher::getInstance();
-		$this->form	= $this->get('Form');
-                $this->item = "faszom";
-                parent::display($tpl);
-        }
+		// Check for errors.
+		if (count($errors = $this->get('Errors'))) 
+		{
+			JError::raiseError(500, implode('<br />', $errors));
+			return false;
+		}
+		// Display the view
+		parent::display($tpl);
+	}
 }
-?>
