@@ -1,15 +1,16 @@
 <?php
 /**
- * default template file for HelloWorlds view of HelloWorld component
+ * default template file for FoodBranches view of FoodBranch component
  *
- * @version		$Id: default.php 46 2010-11-21 17:27:33Z chdemko $
- * @package		Joomla16.Tutorials
+ * @version		$Id: default.php 46 2014-05-1 13:27:33Z Imre $
+ * @package		FoodBranch
  * @subpackage	Components
- * @copyright	Copyright (C) 2005 - 2010 Open Source Matters, Inc. All rights reserved.
- * @author		Christophe Demko
- * @link		http://joomlacode.org/gf/project/helloworld_1_6/
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @author		Imre von Geczy
+ * @link
  * @license		License GNU General Public License version 2 or later
  */
+
 // No direct access to this file
 defined('_JEXEC') or die('Restricted Access');
 // load tooltip behavior
