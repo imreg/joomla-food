@@ -1,15 +1,14 @@
 <?php
 
 /**
- * @version		$Id: controller.php 46 2010-11-21 17:27:33Z chdemko $
- * @package		Joomla16.Tutorials
+ * @version		$Id: controller.php 2014-05-1 13:27:33Z Imre $
+ * @package		FoodBranch
  * @subpackage	Components
- * @copyright	Copyright (C) 2005 - 2010 Open Source Matters, Inc. All rights reserved.
- * @author		Christophe Demko
- * @link		http://joomlacode.org/gf/project/helloworld_1_6/
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @author		Imre von Geczy
+ * @link
  * @license		License GNU General Public License version 2 or later
  */
-
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
 
@@ -17,7 +16,7 @@ defined('_JEXEC') or die('Restricted access');
 jimport('joomla.application.component.controller');
 
 /**
- * General Controller of HelloWorld component
+ * General Controller of FoodBranches component
  */
 class FoodBranchesController extends JController
 {

@@ -85,6 +85,14 @@
 			size="20"
 			rows="3"
 		 />
+		<field name="is_comment"
+			type="checkbox"
+			label="COM_FOODBRANCHES_IS_COMMENT"
+			description="COM_FOODBRANCHES_IS_COMMENT"
+			class="inputbox"
+			value="1" 
+			default="0"
+		 />		
 		<field name="latitude"
 			type="text"
 			label="COM_FOODBRANCHES_LATITUDE"

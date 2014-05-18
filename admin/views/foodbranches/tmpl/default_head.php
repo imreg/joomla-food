@@ -1,13 +1,13 @@
 <?php
 /**
- * default head template file for HelloWorlds view of HelloWorld component
+ * default head template file for FoodBranches view of FoodBranch component
  *
- * @version		$Id: default_head.php 51 2010-11-22 01:33:21Z chdemko $
- * @package		Joomla16.Tutorials
+ * @version		$Id: default_head.php 2014-05-1 13:27:33Z Imre $
+ * @package		FoodBranch
  * @subpackage	Components
- * @copyright	Copyright (C) 2005 - 2010 Open Source Matters, Inc. All rights reserved.
- * @author		Christophe Demko
- * @link		http://joomlacode.org/gf/project/helloworld_1_6/
+ * @copyright	Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @author		Imre von Geczy
+ * @link
  * @license		License GNU General Public License version 2 or later
  */
 // No direct access to this file
