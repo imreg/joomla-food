@@ -52,7 +52,7 @@
 	</media>
 	<administration>
 		<!-- Administration Menu Section -->
-		<menu>Food Branch</menu>
+		<menu img="components/com_foodbranches/images/logo_foodbranches.png">Food Branch</menu>
 		<!-- Administration Main File Copy Section -->
 		<!-- Note the folder attribute: This attribute describes the folder
 			to copy FROM in the package to install therefore files copied
@@ -70,6 +70,8 @@
 			<folder>models</folder>
 			<!-- views files section -->
 			<folder>views</folder>
+			<!-- images files section -->
+			<folder>images</folder>
 			<!-- controllers files section -->
 			<folder>controllers</folder>
 		</files>
