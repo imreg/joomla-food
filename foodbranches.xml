@@ -38,6 +38,8 @@
 		<filename>index.html</filename>
 		<filename>foodbranches.php</filename>
 		<filename>controller.php</filename>
+		<folder>controllers</folder>
+		<folder>helpers</folder>
 		<folder>views</folder>
 		<folder>models</folder>
 		<folder>language</folder>
