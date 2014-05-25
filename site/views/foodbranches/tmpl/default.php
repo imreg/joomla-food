@@ -23,7 +23,7 @@ JHtml::script('com_foodbranches/googleinfobox.js',false,true);
 <script src="/media/com_foodbranches/js/google.js" type="text/javascript"></script>
 <script type="text/javascript">
 	var coordinates = <?php echo( $this->companyname); ?>;
-	Map.init();
-	Map.setCoordinates(coordinates);
-	Map.getPlaces();
+	var gmap = new GMap();
+	gmap.setCoordinates(coordinates);
+	gmap.getPlaces();
 </script>
