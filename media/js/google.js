@@ -174,10 +174,10 @@ var GMap = Class({
                     case 3:
                     case 5:
                     case 6:
-                        var address_components = results[0].address_components[1].long_name;
+                        var value_city = results[0].address_components[1].long_name;
                         break;
                     case 4:
-                        var address_components = results[0].address_components[3].long_name;
+                        var value_city = results[0].address_components[3].long_name;
                         break;
                     default:
                         color_city = '#FFD5E7';
