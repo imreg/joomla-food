@@ -87,7 +87,7 @@ JHtml::script('com_foodbranches/googleinfobox.js',false,true);
 			<legend><?php echo JText::_('COM_FOODBRANCHES_GOOGLE_MAP'); ?></legend>
 			<div class="map-adminframe">
 				<div id="map-canvas" class="admin-map-canvas"></div>
-				<button onclick="Map.checkPlace();">Place Check</button>
+				<button onclick="gmap.checkPlace();">Place Check</button>
 			</div>
 	</fieldset>			
 </div>	
@@ -98,6 +98,6 @@ JHtml::script('com_foodbranches/googleinfobox.js',false,true);
 </div>
 <script src="/media/com_foodbranches/js/google.js" type="text/javascript"></script>
 <script type="text/javascript">
-	Map.init();
-	Map.postcodeListener();
+	var gmap = new GMap();
+	gmap.postcodeListener();
 </script>
