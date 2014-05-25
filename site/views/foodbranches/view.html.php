@@ -24,7 +24,8 @@ class FoodBranchesViewFoodBranches extends JView
 	function display($tpl = null) 
 	{
 		// Assign data to the view
-		$this->companyname = $this->get('Company');
+		$this->companyname = $this->get('Ajax_Company');
+                $this->company_list = $this->get('Company');
 
 		// Check for errors.
 		if (count($errors = $this->get('Errors'))) 

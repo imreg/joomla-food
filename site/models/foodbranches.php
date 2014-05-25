@@ -9,27 +9,41 @@
  * @link
  * @license		License GNU General Public License version 2 or later
  */
-
 // No direct access to this file
-defined ( '_JEXEC' ) or die ( 'Restricted access' );
+defined('_JEXEC') or die('Restricted access');
 
 // import Joomla modelitem library
-jimport ( 'joomla.application.component.modelitem' );
+jimport('joomla.application.component.modelitem');
 
 /**
  * FoodBranches Model
  */
 class FoodBranchesModelFoodBranches extends JModelItem {
 
-	public function getCompany() {
-		$table = '#__foodbranches';
-		$db = JFactory::getDBO ();
-		
-		$query = $db->getQuery ( true );
-		$query->select ( '*');
-		$query->from ( $table );
-		
-		$db->setQuery ( $query );
-		return json_encode($db->loadObjectList());
-	}
+    private $_results = '';
+    
+    public function __construct($config = array()) {
+        parent::__construct($config);
+        $this->_init();
+    }
+
+    public function _init() {
+        $table = '#__foodbranches';
+        $db = JFactory::getDBO();
+
+        $query = $db->getQuery(true);
+        $query->select('*');
+        $query->from($table);
+
+        $db->setQuery($query);
+        
+        $this->_results = $db->loadObjectList();
+    }
+
+    public function getAjax_Company() {
+        return json_encode($this->_results);
+    }
+    public function getCompany() {
+        return $this->_results;
+    }
 }

@@ -18,8 +18,31 @@ JHtml::script('https://maps.googleapis.com/maps/api/js?sensor=false', false, tru
 JHtml::script('com_foodbranches/googleinfobox.js',false,true);
 ?>
 
-<div id="map-canvas" class="front-map-canvas"></div>
-<div class="front-more-info"><p>Click on the flag for more information</p></div>
+<div class="front-map-container">
+    <div class="front-map-content">
+        <div id="map-canvas" class="front-map-canvas"></div>
+        <div class="front-map-comment"><p><?php echo JText::_('COM_FOODBRANCHES_MORE_INFO') ?></p></div>
+    </div>
+    <div class="front-map-branch-list">
+        <ul>
+            <li class="default" onclick="gmap.getPlaces()">
+                <span class="company-name-all" onclick="gmap.getPlaces()"><?php echo JText::_('COM_FOODBRANCHES_SEE_ALL_BRANCHES') ?></span>
+            </li>
+            <?php foreach($this->company_list as $company) : ?>
+            <li>
+                <span class="company-name" onclick="gmap.postcode('<?php echo $company->address_postcode ?>','<?php echo $company->comment ?>');" longitude="<?php echo $company->longitude ?>" latitude="<?php echo $company->latitude ?>" >
+                    <?php echo $company->companyname?>
+                </span>
+                <span class="company-address">
+                    <?php echo  $company->address_city. ' ' . $company->address_street.' '. $company->address_postcode ?>
+                </span>
+            </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+</div>
+<div class="front-map-clear"></div>
+
 <script src="/media/com_foodbranches/js/google.js" type="text/javascript"></script>
 <script type="text/javascript">
 	var coordinates = <?php echo( $this->companyname); ?>;
